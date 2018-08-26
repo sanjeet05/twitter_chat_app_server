@@ -51,7 +51,7 @@ const production = {
   jwtExpirationInterval: JWT_EXPIRATION_MINUTES,
   port: process.env.PORT || 3100,
   mongo: {
-    uri: 'mongodb://sanjeet05:sanjeet123@ds125489.mlab.com:25489/twitter_chat_app',
+    uri: 'mongodb://sanjeet05:sanjeet#123@ds133622.mlab.com:33622/twitter_chat_app',
   },
   logs: process.env.NODE_ENV === 'production' ? 'combined' : 'dev',
 
