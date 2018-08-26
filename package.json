@@ -11,8 +11,8 @@
     "yarn": "*"
   },
   "scripts": {
-    "preinstall": "npm install pm2 -g",
-    "start": "cross-env NODE_ENV=production pm2 start ./src/index.js",
+    "preinstall": "npm install -g nodemon",
+    "start": "cross-env NODE_ENV=production && nodemon ./src/index.js",
     "dev": "cross-env NODE_ENV=development && nodemon ./src/index.js",
     "prod": "cross-env NODE_ENV=production && pm2 start ./src/index.js",
     "lint": "eslint **/*.js --ignore-path .gitignore --ignore-pattern internals/scripts",
