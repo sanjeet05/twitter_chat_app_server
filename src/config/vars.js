@@ -33,7 +33,8 @@ const development = {
   jwtExpirationInterval: JWT_EXPIRATION_MINUTES,
   port: process.env.PORT || 3100,
   mongo: {
-    uri: 'mongodb://localhost:27017/richpanel-dev',
+    // uri: 'mongodb://localhost:27017/richpanel-dev',
+    uri: 'mongodb://sanjeet05:sanjeet#123@ds133622.mlab.com:33622/twitter_chat_app',
   },
   logs: process.env.NODE_ENV === 'production' ? 'combined' : 'dev',
 
